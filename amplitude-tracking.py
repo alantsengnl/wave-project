@@ -25,6 +25,7 @@ def click_event(event, x, y, flags, param):
             print(f"Selected bar tip {len(pts)} of {N_BARS}: ({x}, {y})")
 
 cv2.namedWindow("Select bar tips", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Select bar tips", 1200, 700)
 cv2.setWindowProperty("Select bar tips", cv2.WND_PROP_TOPMOST, 1)
 cv2.imshow("Select bar tips", frame0)
 cv2.setMouseCallback("Select bar tips", click_event)
@@ -255,6 +256,7 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
+
 
 
 
